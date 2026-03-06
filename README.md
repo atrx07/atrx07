@@ -38,3 +38,7 @@ SQL
 
 Email: arppithandrewsee@gmail.com
 GitHub: https://github.com/atrx07
+
+## 🐍 Contribution Snake
+
+![snake gif](https://github.com/atrx07/atrx07/blob/output/github-contribution-grid-snake.svg)
