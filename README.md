@@ -28,9 +28,9 @@ SQL
 
 ## 📊 GitHub Stats
 
-![Stats](https://github-readme-stats.vercel.app/api?username=atrx07&show_icons=true)
+![Arppith's GitHub stats](https://github-readme-stats.vercel.app/api?username=atrx07&show_icons=true&theme=dark)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=atrx07&layout=compact)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=atrx07&layout=compact&theme=dark)
 
 ---
 
