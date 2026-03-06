@@ -2,7 +2,8 @@
 
 💻 Engineering Student  
 🤖 Interested in Bots, Automation, and Systems  
-🐍 Python | C | JavaScript | Kotlin  
+🐍 Python | C | JavaScript | C++
+HTML | SQL | Bash
 
 ---
 
@@ -19,7 +20,9 @@
 Python  
 C / C++  
 JavaScript  
-Kotlin
+HTML
+BASH
+SQL
 
 ---
 
