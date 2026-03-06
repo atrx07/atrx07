@@ -2,7 +2,7 @@
 
 💻 Engineering Student  
 🤖 Interested in Bots, Automation, and Systems  
-🐍 Python | C | JavaScript | C++
+🐍 Python | C | JavaScript | C++ | 
 HTML | SQL | Bash
 
 ---
