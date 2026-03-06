@@ -1,16 +1,37 @@
-## Hi there 👋
+# Hi, I'm Arppith 👋
 
-<!--
-**atrx07/atrx07** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+💻 Engineering Student  
+🤖 Interested in Bots, Automation, and Systems  
+🐍 Python | C | JavaScript | Kotlin  
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🚀 Projects
+
+- Telegram Beep Bot – Converts text into binary beep audio
+- Wikipedia Search Bot – Telegram bot with logging and disambiguation
+- Automation experiments
+
+---
+
+## 🛠 Tech Stack
+
+Python  
+C / C++  
+JavaScript  
+Kotlin
+
+---
+
+## 📊 GitHub Stats
+
+![Stats](https://github-readme-stats.vercel.app/api?username=atrx07&show_icons=true)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=atrx07&layout=compact)
+
+---
+
+## 📫 Contact
+
+Email: arppithandrewsee@gmail.com
+GitHub: https://github.com/atrx07
