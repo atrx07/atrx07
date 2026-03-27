@@ -11,7 +11,7 @@
 
 ### `{ building things that shouldn't exist }`
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Space+Mono&size=14&duration=3000&pause=1000&color=E8FF6B&center=true&vCenter=true&width=500&lines=Engineering+Student+%2F%2F+Bot+Builder;Automation+%7C+Systems+%7C+Chaos;JavaScript+%7C+Python+%7C+Node.js;always+shipping%2C+never+stopping)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Space+Mono&size=14&duration=3000&pause=1000&color=E8FF6B&center=true&vCenter=true&width=500&lines=Engineering+Student+%2F%2F+Bot+Builder;Automation+%7C+Systems+%7C+AI;JavaScript+%7C+Python+%7C+Node.js;always+shipping%2C+never+stopping)](https://git.io/typing-svg)
 
 </div>
 
