@@ -1,12 +1,12 @@
 <div align="center">
 
 ```
- ░█████╗░████████╗██████╗░██╗░░██╗ ░█████╗░███████╗
- ██╔══██╗╚══██╔══╝██╔══██╗╚██╗██╔╝ ██╔══██╗╚════██║
- ███████║░░░██║░░░██████╔╝░╚███╔╝░ ██║░░██║░░███╔═╝
- ██╔══██║░░░██║░░░██╔══██╗░██╔██╗░ ██║░░██║██╔══╝░░
- ██║░░██║░░░██║░░░██║░░██║██╔╝╚██╗ ╚█████╔╝███████╗
- ╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝ ╚════╝░╚══════╝
+ █████╗ ████████╗██████╗ ██╗  ██╗ ██████╗ ███████╗
+██╔══██╗╚══██╔══╝██╔══██╗╚██╗██╔╝██╔═████╗╚════██║
+███████║   ██║   ██████╔╝ ╚███╔╝ ██║██╔██║    ██╔╝
+██╔══██║   ██║   ██╔══██╗ ██╔██╗ ████╔╝██║   ██╔╝ 
+██║  ██║   ██║   ██║  ██║██╔╝╚██╗╚██████╔╝   ██║  
+╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝    ╚═╝  
 ```
 
 ### `{ building things that shouldn't exist }`
@@ -29,8 +29,8 @@ focus:
   - AI-powered tools
   - Discord / Telegram / WhatsApp integrations
 currently_building:
-  - Telegram → Instagram AI post pipeline (n8n + Groq + HuggingFace)
   - Forge — local AI site builder on Termux
+  - Expanding Cecilia & Aveline bots
 stack: [ JavaScript, Python, Node.js, C, C++, Bash, SQL, HTML ]
 ```
 
@@ -53,14 +53,6 @@ stack: [ JavaScript, Python, Node.js, C, C++, Bash, SQL, HTML ]
 ### 🔥 **[Forge](https://github.com/atrx07/forge)**
 
 > Local AI-powered site builder running in Termux via Express. Generates full sites using Groq (`openai/gpt-oss-120b`) and deploys in one click via n8n + Netlify webhook.
-
-### 📸 **Telegram → Instagram AI Pipeline** *(n8n workflow)*
-
-> End-to-end automation: Telegram bot → Groq prompt enhancement → HuggingFace FLUX.1 image gen → Cloudinary → Groq captions/hashtags → Zernio Instagram post → Telegram confirmation. Fully button-driven with inline keyboard UX.
-
-### 🐦 **Flappy Bird Web**
-
-> Browser-based Flappy Bird with power-ups and full mobile optimization.
 
 ### 📡 **Telegram Beep Bot** *(classic)*
 
@@ -131,5 +123,5 @@ stack: [ JavaScript, Python, Node.js, C, C++, Bash, SQL, HTML ]
 -----
 
 <div align="center">
-  <sub>built from termux. shipped from chaos.</sub>
+  <sub>built from scratch. shipped from chaos.</sub>
 </div>
