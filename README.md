@@ -17,53 +17,6 @@
 
 -----
 
-## ⚡ ABOUT
-
-```yaml
-name: Arppith
-handle: atrx07
-role: Engineering Student / Builder
-focus:
-  - Bots & automation systems
-  - Full-stack web applications
-  - AI-powered tools
-  - Discord / Telegram / WhatsApp integrations
-currently_building:
-  - Forge — local AI site builder on Termux
-  - Expanding Cecilia & Aveline bots
-stack: [ JavaScript, Python, Node.js, C, C++, Bash, SQL, HTML ]
-```
-
------
-
-## 🛠 PROJECTS
-
-### 🤖 **[Cecilia Bot](https://github.com/atrx07/cecilia-bot)**
-
-> Discord AI character bot with 4-stage relationship progression, per-user DM conversations, feeling state tracking, and a live dashboard channel. Built with discord.js v14, Groq (llama-3.3-70b), and Upstash Redis.
-
-### 💬 **[Aveline Bot](https://github.com/atrx07/aveline-bot)**
-
-> WhatsApp AI chatbot with a login-protected web dashboard. Powered by Baileys, Groq with 3-key rotation + model fallback, and Upstash Redis for persistence. Hosted on Railway.
-
-### 🌐 **[void.chat](https://void-chat-4wf.pages.dev)**
-
-> Anonymous global chat PWA — Cloudflare Pages + Functions + D1 SQLite. Features real-time messaging, VAPID push notifications, admin panel, system announcements, online users tab, and a 200-message rolling window.
-
-### 🔥 **[Forge](https://github.com/atrx07/forge)**
-
-> Local AI-powered site builder running in Termux via Express. Generates full sites using Groq (`openai/gpt-oss-120b`) and deploys in one click via n8n + Netlify webhook.
-
-### 📡 **Telegram Beep Bot** *(classic)*
-
-> Converts text into binary beep audio. One of the originals.
-
-### 🔍 **Wikipedia Search Bot** *(classic)*
-
-> Telegram bot with logging and smart disambiguation handling.
-
------
-
 ## 🧰 STACK
 
 <div align="center">
@@ -91,9 +44,8 @@ stack: [ JavaScript, Python, Node.js, C, C++, Bash, SQL, HTML ]
 
 <div align="center">
 
-![Arppith’s GitHub stats](https://github-readme-stats.vercel.app/api?username=atrx07&show_icons=true&theme=dark&bg_color=0d0d0d&border_color=e8ff6b&title_color=e8ff6b&icon_color=e8ff6b&text_color=ffffff&hide_border=false)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=atrx07&layout=compact&theme=dark&bg_color=0d0d0d&border_color=e8ff6b&title_color=e8ff6b&text_color=ffffff)
+<img src="https://github-readme-stats.vercel.app/api?username=atrx07&show_icons=true&theme=dark&bg_color=0d0d0d&border_color=e8ff6b&title_color=e8ff6b&icon_color=e8ff6b&text_color=ffffff&hide_border=false" height="165"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=atrx07&layout=compact&theme=dark&bg_color=0d0d0d&border_color=e8ff6b&title_color=e8ff6b&text_color=ffffff" height="165"/>
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=atrx07&theme=dark&background=0d0d0d&border=e8ff6b&ring=e8ff6b&fire=e8ff6b&currStreakLabel=e8ff6b&sideLabels=e8ff6b&dates=888888)](https://git.io/streak-stats)
 
@@ -101,11 +53,98 @@ stack: [ JavaScript, Python, Node.js, C, C++, Bash, SQL, HTML ]
 
 -----
 
+## ⚡ ABOUT
+
+```yaml
+name: Arppith Andrews
+handle: atrx07
+role: Engineering Student / Builder
+focus:
+  - Bots & automation systems
+  - Full-stack web applications
+  - AI-powered tools
+  - Discord / Telegram / WhatsApp integrations
+currently_building:
+  - Forge — local AI site builder on Termux
+  - Expanding Cecilia & Aveline bots
+stack: [ JavaScript, Python, Node.js, C, C++, Bash, SQL, HTML ]
+```
+
+-----
+
+## 🛠 PROJECTS
+
+<table>
+<tr>
+<td width="50%">
+
+### 🤖 [Cecilia Bot](https://github.com/atrx07/cecilia-bot)
+
+> Discord AI character bot with **4-stage relationship progression**, per-user DM conversations, feeling state tracking, and a live dashboard channel.
+> 
+> `discord.js v14` · `Groq llama-3.3-70b` · `Upstash Redis`
+
+</td>
+<td width="50%">
+
+### 💬 [Aveline Bot](https://github.com/atrx07/aveline-bot)
+
+> WhatsApp AI chatbot with a **login-protected web dashboard**. 3-key Groq rotation, model fallback chain, and per-user mood tracking.
+> 
+> `Baileys` · `Groq` · `Upstash Redis` · `Railway`
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🌐 [void.chat](https://void-chat-4wf.pages.dev)
+
+> Anonymous global chat PWA — real-time messaging, VAPID push notifications, admin panel, and a 200-message rolling window.
+> 
+> `Cloudflare Pages` · `D1 SQLite` · `Workers`
+
+</td>
+<td width="50%">
+
+### 🔥 [Forge](https://github.com/atrx07/forge)
+
+> Local AI-powered site builder running in **Termux** via Express. Generates full sites with Groq and deploys in one click via n8n + Netlify.
+> 
+> `Express` · `Groq` · `n8n` · `Netlify`
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 📡 Telegram Beep Bot *(classic)*
+
+> Converts text into binary beep audio.
+> One of the originals.
+
+</td>
+<td width="50%">
+
+### 🔍 Wikipedia Search Bot *(classic)*
+
+> Telegram bot with logging and smart disambiguation handling.
+
+</td>
+</tr>
+</table>
+
+-----
+
 ## 🐍 CONTRIBUTION SNAKE
 
 <div align="center">
 
-![snake gif](https://github.com/atrx07/atrx07/blob/output/github-contribution-grid-snake-dark.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/atrx07/atrx07/blob/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/atrx07/atrx07/blob/output/github-contribution-grid-snake.svg" />
+  <img alt="github-snake" src="https://github.com/atrx07/atrx07/blob/output/github-contribution-grid-snake-dark.svg" />
+</picture>
 
 </div>
 
@@ -123,5 +162,13 @@ stack: [ JavaScript, Python, Node.js, C, C++, Bash, SQL, HTML ]
 -----
 
 <div align="center">
-  <sub>built from scratch. shipped from chaos.</sub>
+
+```
+╔══════════════════════════════════════════╗
+║   built from scratch. shipped from chaos ║
+╚══════════════════════════════════════════╝
+```
+
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=atrx07.atrx07&left_color=1a1a1a&right_color=e8ff6b&left_text=visitors)
+
 </div>
