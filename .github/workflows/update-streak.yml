@@ -1,14 +1,6 @@
 name: Update rolling streak
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "scripts/streak-core.mjs"
-      - "scripts/streak-core.test.mjs"
-      - "scripts/update-streak.mjs"
-      - ".github/workflows/update-streak.yml"
   workflow_dispatch:
   schedule:
     - cron: "*/5 * * * *"
