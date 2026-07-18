@@ -159,7 +159,7 @@ export async function qualifyEvent(
     const isContributionBranch =
       pushedBranch === repository.default_branch || pushedBranch === "gh-pages";
 
-    if (!isContributionBranch || !event.payload?.commits?.length) {
+    if (!isContributionBranch) {
       return null;
     }
 
