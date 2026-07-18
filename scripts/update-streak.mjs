@@ -52,13 +52,16 @@ async function github(path, maxAttempts = 3) {
 async function loadState() {
   try {
     const state = JSON.parse(await readFile(statePath, "utf8"));
+    const sourceVersion = Number(state.version) || 1;
     return {
-      version: 1,
+      version: 2,
+      sourceVersion,
       username,
       timeZone,
       bestStreak: Number(state.bestStreak) || 0,
       contributions: Array.isArray(state.contributions) ? state.contributions : [],
-      processedEventIds: Array.isArray(state.processedEventIds)
+      processedEventIds:
+        sourceVersion >= 2 && Array.isArray(state.processedEventIds)
         ? state.processedEventIds.map(String)
         : [],
     };
@@ -67,7 +70,8 @@ async function loadState() {
       throw error;
     }
     return {
-      version: 1,
+      version: 2,
+      sourceVersion: 2,
       username,
       timeZone,
       bestStreak: 0,
@@ -91,6 +95,9 @@ async function getRecentEvents() {
 
 async function main() {
   const [state, events] = await Promise.all([loadState(), getRecentEvents()]);
+  if (state.sourceVersion < 2) {
+    console.log("Migrating streak state to rolling inactivity windows.");
+  }
   const processed = new Set(state.processedEventIds);
   const repositoryCache = new Map();
   const getRepository = async (fullName) => {
@@ -133,7 +140,7 @@ async function main() {
     ...new Set([...events.map((event) => String(event.id)), ...state.processedEventIds]),
   ].slice(0, 1000);
   const nextState = {
-    version: 1,
+    version: 2,
     username,
     timeZone,
     bestStreak: streak.bestStreak,
