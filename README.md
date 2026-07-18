@@ -1,172 +1,177 @@
 <div align="center">
 
 ```
- █████╗ ████████╗██████╗ ██╗  ██╗ ██████╗ ███████╗
-██╔══██╗╚══██╔══╝██╔══██╗╚██╗██╔╝██╔═████╗╚════██║
-███████║   ██║   ██████╔╝ ╚███╔╝ ██║██╔██║    ██╔╝
-██╔══██║   ██║   ██╔══██╗ ██╔██╗ ████╔╝██║   ██╔╝ 
-██║  ██║   ██║   ██║  ██║██╔╝╚██╗╚██████╔╝   ██║  
-╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝    ╚═╝  
+    A    TTTTTTT RRRRR   X   X   000  777777
+   A A      T    R    R   X X   0   0     7
+  AAAAA     T    RRRRR     X    0   0    7
+ A     A    T    R   R    X X   0   0   7
+A       A   T    R    R  X   X   000   7
 ```
 
-### `{ building things that shouldn't exist }`
+### `{ building useful things at the edge of practical and unusual }`
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Space+Mono&size=14&duration=3000&pause=1000&color=E8FF6B&center=true&vCenter=true&width=500&lines=Engineering+Student+%2F%2F+Bot+Builder;Automation+%7C+Systems+%7C+AI;JavaScript+%7C+Python+%7C+Node.js;always+shipping%2C+never+stopping)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Space+Mono&size=14&duration=3000&pause=1000&color=E8FF6B&center=true&vCenter=true&width=620&lines=Local+AI+%2F%2F+Real-time+Systems+%2F%2F+Automation;Rust+%7C+TypeScript+%7C+React+%7C+Python+%7C+Node.js;currently+shipping+NeuraLoc-Core)](https://git.io/typing-svg)
 
-</div>
+<p>
+Engineering student building local AI software, real-time applications, and bots with memory.<br/>
+I like turning ambitious ideas into systems that can survive contact with real users and real hardware.
+</p>
 
------
-
-## 🧰 STACK
-
-<div align="center">
-
-![JavaScript](https://img.shields.io/badge/JavaScript-E8FF6B?style=for-the-badge&logo=javascript&logoColor=000)
-![Node.js](https://img.shields.io/badge/Node.js-E8FF6B?style=for-the-badge&logo=node.js&logoColor=000)
-![Python](https://img.shields.io/badge/Python-E8FF6B?style=for-the-badge&logo=python&logoColor=000)
-![C](https://img.shields.io/badge/C-E8FF6B?style=for-the-badge&logo=c&logoColor=000)
-![C++](https://img.shields.io/badge/C++-E8FF6B?style=for-the-badge&logo=c%2B%2B&logoColor=000)
-![Bash](https://img.shields.io/badge/Bash-E8FF6B?style=for-the-badge&logo=gnubash&logoColor=000)
-![SQL](https://img.shields.io/badge/SQL-E8FF6B?style=for-the-badge&logo=sqlite&logoColor=000)
-
-![Cloudflare](https://img.shields.io/badge/Cloudflare-1a1a1a?style=for-the-badge&logo=cloudflare&logoColor=E8FF6B)
-![Netlify](https://img.shields.io/badge/Netlify-1a1a1a?style=for-the-badge&logo=netlify&logoColor=E8FF6B)
-![Railway](https://img.shields.io/badge/Railway-1a1a1a?style=for-the-badge&logo=railway&logoColor=E8FF6B)
-![n8n](https://img.shields.io/badge/n8n-1a1a1a?style=for-the-badge&logo=n8n&logoColor=E8FF6B)
-![Redis](https://img.shields.io/badge/Upstash_Redis-1a1a1a?style=for-the-badge&logo=redis&logoColor=E8FF6B)
-![Groq](https://img.shields.io/badge/Groq_AI-1a1a1a?style=for-the-badge&logo=openai&logoColor=E8FF6B)
+[![GitHub](https://img.shields.io/badge/GitHub-atrx07-E8FF6B?style=flat-square&logo=github&logoColor=000)](https://github.com/atrx07)
+[![Email](https://img.shields.io/badge/Email-say_hello-E8FF6B?style=flat-square&logo=gmail&logoColor=000)](mailto:arppithandrewsee@gmail.com)
 
 </div>
 
------
+---
 
-## 📊 STATS
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=atrx07&show_icons=true&theme=dark&bg_color=0d0d0d&border_color=e8ff6b&title_color=e8ff6b&icon_color=e8ff6b&text_color=ffffff&hide_border=false" height="165"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=atrx07&layout=compact&theme=dark&bg_color=0d0d0d&border_color=e8ff6b&title_color=e8ff6b&text_color=ffffff" height="165"/>
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=atrx07&theme=dark&background=0d0d0d&border=e8ff6b&ring=e8ff6b&fire=e8ff6b&currStreakLabel=e8ff6b&sideLabels=e8ff6b&dates=888888)](https://git.io/streak-stats)
-
-</div>
-
------
-
-## ⚡ ABOUT
-
-```yaml
-name: Arppith Andrews
-handle: atrx07
-role: Engineering Student / Builder
-focus:
-  - Bots & automation systems
-  - Full-stack web applications
-  - AI-powered tools
-  - Discord / Telegram / WhatsApp integrations
-currently_building:
-  - Forge — local AI site builder on Termux
-  - Expanding Cecilia & Aveline bots
-stack: [ JavaScript, Python, Node.js, C, C++, Bash, SQL, HTML ]
-```
-
------
-
-## 🛠 PROJECTS
+## `CURRENTLY BUILDING`
 
 <table>
 <tr>
-<td width="50%">
+<td>
 
-### 🤖 [Cecilia Bot](https://github.com/atrx07/cecilia-bot)
+### [NeuraLoc-Core](https://github.com/atrx07/NueraLoc-Core)
 
-> Discord AI character bot with **4-stage relationship progression**, per-user DM conversations, feeling state tracking, and a live dashboard channel.
-> 
-> `discord.js v14` · `Groq llama-3.3-70b` · `Upstash Redis`
+**A privacy-first Windows desktop application for discovering, managing, and running local AI models.** NeuraLoc-Core combines a React and TypeScript interface with Tauri 2, Rust orchestration, SQLite metadata, and verified native inference engines.
 
-</td>
-<td width="50%">
+![Rust](https://img.shields.io/badge/Rust-E8FF6B?style=flat-square&logo=rust&logoColor=000)
+![TypeScript](https://img.shields.io/badge/TypeScript-E8FF6B?style=flat-square&logo=typescript&logoColor=000)
+![React](https://img.shields.io/badge/React-E8FF6B?style=flat-square&logo=react&logoColor=000)
+![Tauri](https://img.shields.io/badge/Tauri-E8FF6B?style=flat-square&logo=tauri&logoColor=000)
+![SQLite](https://img.shields.io/badge/SQLite-E8FF6B?style=flat-square&logo=sqlite&logoColor=000)
 
-### 💬 [Aveline Bot](https://github.com/atrx07/aveline-bot)
-
-> WhatsApp AI chatbot with a **login-protected web dashboard**. 3-key Groq rotation, model fallback chain, and per-user mood tracking.
-> 
-> `Baileys` · `Groq` · `Upstash Redis` · `Railway`
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 🌐 [void.chat](https://void-chat-4wf.pages.dev)
-
-> Anonymous global chat PWA — real-time messaging, VAPID push notifications, admin panel, and a 200-message rolling window.
-> 
-> `Cloudflare Pages` · `D1 SQLite` · `Workers`
-
-</td>
-<td width="50%">
-
-### 🔥 [Forge](https://github.com/atrx07/forge)
-
-> Local AI-powered site builder running in **Termux** via Express. Generates full sites with Groq and deploys in one click via n8n + Netlify.
-> 
-> `Express` · `Groq` · `n8n` · `Netlify`
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 📡 Telegram Beep Bot *(classic)*
-
-> Converts text into binary beep audio.
-> One of the originals.
-
-</td>
-<td width="50%">
-
-### 🔍 Wikipedia Search Bot *(classic)*
-
-> Telegram bot with logging and smart disambiguation handling.
+- **Current checkpoint:** Local GGUF indexing, a verified `llama.cpp` CPU runtime, model lifecycle controls, streaming chat, exact token-aware context, versioned prompts, durable history, branching, retry, and Markdown export.
+- **Coming next:** A model discovery and download catalog, hardware-aware multi-backend recommendations, layered prompt composition, stronger draft recovery, and release-ready Windows packaging.
+- **North star:** A dependable local-AI control center that keeps models and conversations on the user's machine while making hardware limits, model provenance, and runtime behavior easy to understand.
 
 </td>
 </tr>
 </table>
 
------
+---
 
-## 🐍 CONTRIBUTION SNAKE
+## `SELECTED WORK`
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [void.chat](https://github.com/atrx07/void-chat)
+
+A real-time global chatroom with Firebase authentication, WebSocket delivery through Cloudflare Durable Objects, and message persistence in D1.
+
+`Cloudflare Workers` // `Durable Objects` // `D1` // `Firebase`
+
+</td>
+<td width="50%" valign="top">
+
+### [Aveline Bot](https://github.com/atrx07/aveline-bot)
+
+A WhatsApp AI chatbot with persistent per-user memory, mood-aware replies, group support, and resilient Groq key and model fallback.
+
+`Baileys` // `Groq` // `Upstash Redis` // `Railway`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Cecilia Bot](https://github.com/atrx07/cecilia-bot) <sup>`private`</sup>
+
+A Discord character bot with staged relationship progression, per-user conversations, persistent emotional state, DM onboarding, and slash-command controls.
+
+`discord.js` // `Groq` // `Upstash Redis`
+
+</td>
+<td width="50%" valign="top">
+
+### [StyleForge Lite](https://github.com/atrx07/styforge)
+
+A mobile-first Yamaha arranger style sketchpad with a browser sequencer, WebAudio preview, project save/load, MIDI export, and experimental `.STY` generation.
+
+`JavaScript` // `WebAudio` // `MIDI` // `Yamaha SFF1`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [AtrxInstaDown](https://github.com/atrx07/atrxinstadown)
+
+A lightweight, installable mobile interface for an Instagram downloader, designed around a fast no-login flow for posts, Reels, and videos.
+
+`HTML` // `CSS` // `JavaScript` // `PWA`
+
+</td>
+<td width="50%" valign="top">
+
+### More experiments
+
+The rest of my repositories cover load testing, Instagram tooling, Telegram automation, security interfaces, and small Python utilities.
+
+[Browse all repositories ->](https://github.com/atrx07?tab=repositories)
+
+</td>
+</tr>
+</table>
+
+---
+
+## `TOOLBOX`
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/atrx07/atrx07/blob/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/atrx07/atrx07/blob/output/github-contribution-grid-snake.svg" />
-  <img alt="github-snake" src="https://github.com/atrx07/atrx07/blob/output/github-contribution-grid-snake-dark.svg" />
-</picture>
+![Rust](https://img.shields.io/badge/Rust-E8FF6B?style=for-the-badge&logo=rust&logoColor=000)
+![TypeScript](https://img.shields.io/badge/TypeScript-E8FF6B?style=for-the-badge&logo=typescript&logoColor=000)
+![JavaScript](https://img.shields.io/badge/JavaScript-E8FF6B?style=for-the-badge&logo=javascript&logoColor=000)
+![React](https://img.shields.io/badge/React-E8FF6B?style=for-the-badge&logo=react&logoColor=000)
+![Node.js](https://img.shields.io/badge/Node.js-E8FF6B?style=for-the-badge&logo=node.js&logoColor=000)
+![Python](https://img.shields.io/badge/Python-E8FF6B?style=for-the-badge&logo=python&logoColor=000)
+
+![Tauri](https://img.shields.io/badge/Tauri-1a1a1a?style=for-the-badge&logo=tauri&logoColor=E8FF6B)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-1a1a1a?style=for-the-badge&logo=cloudflare&logoColor=E8FF6B)
+![SQLite](https://img.shields.io/badge/SQLite-1a1a1a?style=for-the-badge&logo=sqlite&logoColor=E8FF6B)
+![Redis](https://img.shields.io/badge/Upstash_Redis-1a1a1a?style=for-the-badge&logo=redis&logoColor=E8FF6B)
+![Groq](https://img.shields.io/badge/Groq_AI-1a1a1a?style=for-the-badge&logo=groq&logoColor=E8FF6B)
+![Railway](https://img.shields.io/badge/Railway-1a1a1a?style=for-the-badge&logo=railway&logoColor=E8FF6B)
 
 </div>
 
------
+---
 
-## 📫 CONTACT
+## `PROFILE`
+
+```yaml
+name: Arppith Andrews
+handle: atrx07
+role: Engineering Student / Builder
+interests:
+  - Local AI and native desktop systems
+  - Real-time web applications
+  - Bots, automation, and persistent memory
+  - Tools that make complicated workflows feel simple
+working_style: Build it, test it on the real target, then keep refining.
+```
+
+---
+
+## `GITHUB`
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-atrx07-E8FF6B?style=for-the-badge&logo=github&logoColor=000)](https://github.com/atrx07)
-[![Email](https://img.shields.io/badge/Email-arppithandrewsee@gmail.com-E8FF6B?style=for-the-badge&logo=gmail&logoColor=000)](mailto:arppithandrewsee@gmail.com)
+<img src="https://github-readme-stats.vercel.app/api?username=atrx07&show_icons=true&theme=dark&bg_color=0d0d0d&border_color=e8ff6b&title_color=e8ff6b&icon_color=e8ff6b&text_color=ffffff" height="165" alt="atrx07 GitHub statistics"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=atrx07&layout=compact&theme=dark&bg_color=0d0d0d&border_color=e8ff6b&title_color=e8ff6b&text_color=ffffff" height="165" alt="atrx07 most-used languages"/>
 
 </div>
 
------
+---
 
 <div align="center">
 
 ```
-╔══════════════════════════════════════════╗
-║   built from scratch. shipped from chaos ║
-╚══════════════════════════════════════════╝
++------------------------------------------+
+|   built from scratch. shipped from chaos |
++------------------------------------------+
 ```
 
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=atrx07.atrx07&left_color=1a1a1a&right_color=e8ff6b&left_text=visitors)
