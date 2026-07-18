@@ -39,26 +39,40 @@ export function mergeDailyContributions(
   incoming = [],
   timeZone = "Asia/Kolkata",
 ) {
-  const earliestByDay = new Map();
+  const activityByDay = new Map();
   const records = [...existing, ...incoming]
     .filter((record) => record?.id && record?.at)
     .map((record) => ({
       ...record,
       id: String(record.id),
-      day: localDayKey(record.at, timeZone),
-    }))
-    .sort((a, b) => {
-      const timeDifference = new Date(a.at).getTime() - new Date(b.at).getTime();
-      return timeDifference || a.id.localeCompare(b.id);
-    });
+      at: new Date(record.at).toISOString(),
+      firstAt: new Date(record.firstAt || record.at).toISOString(),
+      day: localDayKey(record.firstAt || record.at, timeZone),
+    }));
 
   for (const record of records) {
-    if (!earliestByDay.has(record.day)) {
-      earliestByDay.set(record.day, record);
+    const current = activityByDay.get(record.day);
+    if (!current) {
+      activityByDay.set(record.day, record);
+      continue;
     }
+
+    const firstAt =
+      new Date(record.firstAt).getTime() < new Date(current.firstAt).getTime()
+        ? record.firstAt
+        : current.firstAt;
+    const recordIsLatest =
+      new Date(record.at).getTime() > new Date(current.at).getTime() ||
+      (record.at === current.at && record.id.localeCompare(current.id) > 0);
+    const latest = recordIsLatest ? record : current;
+
+    activityByDay.set(record.day, { ...latest, firstAt });
   }
 
-  return [...earliestByDay.values()];
+  return [...activityByDay.values()].sort((a, b) => {
+    const timeDifference = new Date(a.firstAt).getTime() - new Date(b.firstAt).getTime();
+    return timeDifference || a.id.localeCompare(b.id);
+  });
 }
 
 export function deriveStreak(
@@ -73,15 +87,16 @@ export function deriveStreak(
   let previousTime = null;
 
   for (const contribution of days) {
-    const contributionTime = new Date(contribution.at).getTime();
+    const firstContributionTime = new Date(contribution.firstAt).getTime();
+    const latestContributionTime = new Date(contribution.at).getTime();
     const insidePreviousWindow =
       previousTime !== null &&
-      contributionTime > previousTime &&
-      contributionTime - previousTime < WINDOW_MS;
+      firstContributionTime > previousTime &&
+      firstContributionTime - previousTime < WINDOW_MS;
 
     sequence = insidePreviousWindow ? sequence + 1 : 1;
     bestStreak = Math.max(bestStreak, sequence);
-    previousTime = contributionTime;
+    previousTime = latestContributionTime;
   }
 
   const lastContribution = days.at(-1) || null;
