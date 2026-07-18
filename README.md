@@ -151,7 +151,7 @@ The rest of my repositories cover load testing, Instagram tooling, Telegram auto
 ```yaml
 name: Arppith Andrews
 handle: atrx07
-role: Engineering Student / Builder
+role: CS Engineering Student / AI And Automation Builder
 interests:
   - Local AI and native desktop systems
   - Real-time web applications
