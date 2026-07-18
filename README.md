@@ -169,6 +169,9 @@ working_style: Build it, test it on the real target, then keep refining.
 <img src="./assets/github-stats.svg" width="400" alt="atrx07 GitHub statistics"/>
 <img src="./assets/top-languages.svg" width="400" alt="atrx07 most-used languages"/>
 
+<br/>
+<img src="./assets/streak.svg" width="400" alt="atrx07 rolling 24-hour contribution streak"/>
+
 </div>
 
 ---
