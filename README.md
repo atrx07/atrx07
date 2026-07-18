@@ -1,11 +1,11 @@
 <div align="center">
 
 ```
-    A    TTTTTTT RRRRR   X   X   000  777777
-   A A      T    R    R   X X   0   0     7
-  AAAAA     T    RRRRR     X    0   0    7
- A     A    T    R   R    X X   0   0   7
-A       A   T    R    R  X   X   000   7
+ A  TTT RRR X X 000 777
+A A  T  R R X X 0 0   7
+AAA  T  RR   X  0 0  7
+A A  T  R R X X 0 0 7
+A A  T  R R X X 000 7
 ```
 
 ### `{ building useful things at the edge of practical and unusual }`
@@ -54,7 +54,7 @@ I like turning ambitious ideas into systems that can survive contact with real u
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td valign="top">
 
 ### [void.chat](https://github.com/atrx07/void-chat)
 
@@ -63,7 +63,9 @@ A real-time global chatroom with Firebase authentication, WebSocket delivery thr
 `Cloudflare Workers` // `Durable Objects` // `D1` // `Firebase`
 
 </td>
-<td width="50%" valign="top">
+</tr>
+<tr>
+<td valign="top">
 
 ### [Aveline Bot](https://github.com/atrx07/aveline-bot)
 
@@ -74,7 +76,7 @@ A WhatsApp AI chatbot with persistent per-user memory, mood-aware replies, group
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
+<td valign="top">
 
 ### [Cecilia Bot](https://github.com/atrx07/cecilia-bot) <sup>`private`</sup>
 
@@ -83,7 +85,9 @@ A Discord character bot with staged relationship progression, per-user conversat
 `discord.js` // `Groq` // `Upstash Redis`
 
 </td>
-<td width="50%" valign="top">
+</tr>
+<tr>
+<td valign="top">
 
 ### [StyleForge Lite](https://github.com/atrx07/styforge)
 
@@ -94,7 +98,7 @@ A mobile-first Yamaha arranger style sketchpad with a browser sequencer, WebAudi
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
+<td valign="top">
 
 ### [AtrxInstaDown](https://github.com/atrx07/atrxinstadown)
 
@@ -103,7 +107,9 @@ A lightweight, installable mobile interface for an Instagram downloader, designe
 `HTML` // `CSS` // `JavaScript` // `PWA`
 
 </td>
-<td width="50%" valign="top">
+</tr>
+<tr>
+<td valign="top">
 
 ### More experiments
 
