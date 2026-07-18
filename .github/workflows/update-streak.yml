@@ -1,0 +1,60 @@
+name: Update rolling streak
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/streak-core.mjs"
+      - "scripts/streak-core.test.mjs"
+      - "scripts/update-streak.mjs"
+      - ".github/workflows/update-streak.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rolling-streak
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Test streak engine
+        run: node --test scripts/streak-core.test.mjs
+
+      - name: Update streak state and card
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          STREAK_TOKEN: ${{ secrets.PROFILE_STREAK_TOKEN }}
+          GITHUB_USERNAME: atrx07
+          STREAK_TIMEZONE: Asia/Kolkata
+        run: node scripts/update-streak.mjs
+
+      - name: Commit changed streak state
+        shell: bash
+        run: |
+          if git diff --quiet -- assets/streak.svg data/streak-state.json; then
+            echo "Rolling streak is already current."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/streak.svg data/streak-state.json
+          git commit -m "Update rolling streak"
+          git push
