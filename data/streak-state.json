@@ -1,40 +1,125 @@
 {
-  "version": 1,
+  "version": 2,
   "username": "atrx07",
   "timeZone": "Asia/Kolkata",
-  "bestStreak": 1,
+  "bestStreak": 3,
   "contributions": [
+    {
+      "id": "13660088440",
+      "at": "2026-06-21T16:10:44.000Z",
+      "day": "2026-06-21",
+      "eventType": "PushEvent",
+      "repo": "atrx07/styforge",
+      "label": "CODE PUSHED",
+      "firstAt": "2026-06-21T03:50:59.000Z"
+    },
+    {
+      "id": "13710659205",
+      "at": "2026-06-22T16:27:36.000Z",
+      "day": "2026-06-22",
+      "eventType": "PushEvent",
+      "repo": "atrx07/styforge",
+      "label": "CODE PUSHED",
+      "firstAt": "2026-06-22T10:47:35.000Z"
+    },
+    {
+      "id": "13826990112",
+      "at": "2026-06-24T15:57:19.000Z",
+      "day": "2026-06-24",
+      "eventType": "PushEvent",
+      "repo": "atrx07/styforge",
+      "label": "CODE PUSHED",
+      "firstAt": "2026-06-24T15:07:00.000Z"
+    },
+    {
+      "id": "14084963618",
+      "at": "2026-06-30T02:06:15.000Z",
+      "day": "2026-06-30",
+      "eventType": "PushEvent",
+      "repo": "atrx07/styforge",
+      "label": "CODE PUSHED",
+      "firstAt": "2026-06-30T02:06:15.000Z"
+    },
+    {
+      "id": "14340399778",
+      "at": "2026-07-04T16:09:21.000Z",
+      "day": "2026-07-04",
+      "eventType": "PushEvent",
+      "repo": "atrx07/styforge",
+      "label": "CODE PUSHED",
+      "firstAt": "2026-07-04T15:24:11.000Z"
+    },
+    {
+      "id": "14378055162",
+      "at": "2026-07-05T16:50:21.000Z",
+      "day": "2026-07-05",
+      "eventType": "PushEvent",
+      "repo": "atrx07/void-chat",
+      "label": "CODE PUSHED",
+      "firstAt": "2026-07-05T16:19:09.000Z"
+    },
     {
       "id": "11415286786",
       "at": "2026-07-06T15:46:49.000Z",
       "day": "2026-07-06",
       "eventType": "ForkEvent",
       "repo": "freshtechbro/claudedesignskills",
-      "label": "REPOSITORY FORKED"
+      "label": "REPOSITORY FORKED",
+      "firstAt": "2026-07-06T03:16:17.000Z"
     },
     {
-      "id": "11524872692",
-      "at": "2026-07-08T17:36:02.000Z",
+      "id": "11526096790",
+      "at": "2026-07-08T18:04:40.000Z",
       "day": "2026-07-08",
-      "eventType": "PullRequestEvent",
-      "repo": "atrx07/styforge",
-      "label": "PULL REQUEST"
+      "eventType": "ForkEvent",
+      "repo": "asgeirtj/system_prompts_leaks",
+      "label": "REPOSITORY FORKED",
+      "firstAt": "2026-07-08T17:36:02.000Z"
     },
     {
-      "id": "11617478440",
-      "at": "2026-07-10T13:56:20.000Z",
+      "id": "14702864289",
+      "at": "2026-07-10T14:20:00.000Z",
       "day": "2026-07-10",
-      "eventType": "PullRequestEvent",
+      "eventType": "PushEvent",
       "repo": "atrx07/styforge",
-      "label": "PULL REQUEST"
+      "label": "CODE PUSHED",
+      "firstAt": "2026-07-10T13:49:37.000Z"
     },
     {
-      "id": "15249441436",
-      "at": "2026-07-18T14:22:31.000Z",
+      "id": "14910269326",
+      "at": "2026-07-13T17:40:34.000Z",
+      "day": "2026-07-13",
+      "eventType": "PushEvent",
+      "repo": "atrx07/NueraLoc-Core",
+      "label": "CODE PUSHED",
+      "firstAt": "2026-07-13T15:02:12.000Z"
+    },
+    {
+      "id": "14980532184",
+      "at": "2026-07-14T18:08:55.000Z",
+      "day": "2026-07-14",
+      "eventType": "PushEvent",
+      "repo": "atrx07/NueraLoc-Core",
+      "label": "CODE PUSHED",
+      "firstAt": "2026-07-14T17:18:44.000Z"
+    },
+    {
+      "id": "15022256842",
+      "at": "2026-07-15T09:49:06.000Z",
+      "day": "2026-07-15",
+      "eventType": "PushEvent",
+      "repo": "atrx07/NueraLoc-Core",
+      "label": "CODE PUSHED",
+      "firstAt": "2026-07-14T19:00:47.000Z"
+    },
+    {
+      "id": "15250132384",
+      "at": "2026-07-18T14:39:20.000Z",
       "day": "2026-07-18",
       "eventType": "PushEvent",
       "repo": "atrx07/atrx07",
-      "label": "CODE PUSHED"
+      "label": "CODE PUSHED",
+      "firstAt": "2026-07-18T07:17:05.000Z"
     }
   ],
   "processedEventIds": [
