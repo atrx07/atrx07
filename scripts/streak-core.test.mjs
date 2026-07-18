@@ -168,10 +168,9 @@ test("merging is idempotent and keeps the earliest event per day", () => {
   assert.equal(merged[0].id, "1");
 });
 
-test("default-branch and gh-pages pushes qualify", async () => {
+test("default-branch and gh-pages pushes qualify with or without commit metadata", async () => {
   const mainPush = event(1, "PushEvent", "2026-07-18T02:00:00.000Z", {
     ref: "refs/heads/main",
-    commits: [{ sha: "a" }],
   });
   const pagesPush = event(2, "PushEvent", "2026-07-19T02:00:00.000Z", {
     ref: "refs/heads/gh-pages",
@@ -189,14 +188,10 @@ test("default-branch and gh-pages pushes qualify", async () => {
   );
 });
 
-test("feature-branch, empty, fork, and archived pushes do not qualify", async () => {
+test("feature-branch, fork, and archived pushes do not qualify", async () => {
   const featurePush = event(1, "PushEvent", "2026-07-18T02:00:00.000Z", {
     ref: "refs/heads/feature",
     commits: [{ sha: "a" }],
-  });
-  const emptyPush = event(2, "PushEvent", "2026-07-18T02:00:00.000Z", {
-    ref: "refs/heads/main",
-    commits: [],
   });
   const mainPush = event(3, "PushEvent", "2026-07-18T02:00:00.000Z", {
     ref: "refs/heads/main",
@@ -204,10 +199,6 @@ test("feature-branch, empty, fork, and archived pushes do not qualify", async ()
   });
   assert.equal(
     await qualifyEvent(featurePush, { username, timeZone, getRepository: standaloneRepo }),
-    null,
-  );
-  assert.equal(
-    await qualifyEvent(emptyPush, { username, timeZone, getRepository: standaloneRepo }),
     null,
   );
   assert.equal(
