@@ -31,7 +31,7 @@ I like turning ambitious ideas into systems that can survive contact with real u
 <tr>
 <td>
 
-### [NeuraLoc-Core](https://github.com/atrx07/NueraLoc-Core)
+### [NeuraLoc-Core](https://github.com/atrx07/NeuraLoc-Core)
 
 **A privacy-first Windows desktop application for discovering, managing, and running local AI models.** NeuraLoc-Core combines a React and TypeScript interface with Tauri 2, Rust orchestration, SQLite metadata, and verified native inference engines.
 
@@ -151,7 +151,8 @@ The rest of my repositories cover load testing, Instagram tooling, Telegram auto
 ```yaml
 name: Arppith Andrews
 handle: atrx07
-role: CS Engineering Student / AI And Automation Builder
+role: Engineering Student
+specialization: Computer Science / AI / Automation
 interests:
   - Local AI and native desktop systems
   - Real-time web applications
