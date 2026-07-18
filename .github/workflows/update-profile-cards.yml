@@ -1,6 +1,12 @@
 name: Update profile cards
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/generate-profile-cards.mjs"
+      - ".github/workflows/update-profile-cards.yml"
   workflow_dispatch:
   schedule:
     - cron: "17 3 * * *"
