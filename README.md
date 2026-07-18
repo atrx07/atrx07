@@ -166,8 +166,8 @@ working_style: Build it, test it on the real target, then keep refining.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=atrx07&show_icons=true&theme=dark&bg_color=0d0d0d&border_color=e8ff6b&title_color=e8ff6b&icon_color=e8ff6b&text_color=ffffff" height="165" alt="atrx07 GitHub statistics"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=atrx07&layout=compact&theme=dark&bg_color=0d0d0d&border_color=e8ff6b&title_color=e8ff6b&text_color=ffffff" height="165" alt="atrx07 most-used languages"/>
+<img src="./assets/github-stats.svg" width="400" alt="atrx07 GitHub statistics"/>
+<img src="./assets/top-languages.svg" width="400" alt="atrx07 most-used languages"/>
 
 </div>
 
