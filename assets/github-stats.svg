@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="180" viewBox="0 0 400 180" role="img" aria-labelledby="title desc">
+  <title id="title">GITHUB SNAPSHOT</title>
+  <desc id="desc">@atrx07 / original public work</desc>
+  <style>
+    .text { font-family: "Segoe UI", Ubuntu, Arial, sans-serif; }
+    .label { fill: #8b949e; font-size: 12px; }
+    .value { fill: #f0f6fc; font-size: 22px; font-weight: 700; }
+  </style>
+  <rect x="0.5" y="0.5" width="399" height="179" rx="6" fill="#0d1117" stroke="#e8ff6b"/>
+  <text class="text" x="22" y="29" fill="#e8ff6b" font-size="14" font-weight="700">GITHUB SNAPSHOT</text>
+  <text class="text" x="22" y="48" fill="#8b949e" font-size="11">@atrx07 / original public work</text>
+  <path d="M22 60H378" stroke="#30363d"/>
+  
+  <text class="text label" x="22" y="86">PUBLIC REPOS</text>
+  <text class="text value" x="22" y="111">13</text>
+  <text class="text label" x="210" y="86">STARS EARNED</text>
+  <text class="text value" x="210" y="111">9</text>
+  <text class="text label" x="22" y="139">FOLLOWERS</text>
+  <text class="text value" x="22" y="164">7</text>
+  <text class="text label" x="210" y="139">FORKS</text>
+  <text class="text value" x="210" y="164">0</text>
+</svg>
