@@ -62,7 +62,7 @@ test("first contribution starts a 24-hour streak", () => {
   );
 });
 
-test("same-day contributions neither increment nor reset the deadline", () => {
+test("same-day contributions keep the count and reset the inactivity window", () => {
   const first = "2026-07-18T02:00:00.000Z";
   const later = "2026-07-18T12:00:00.000Z";
   const result = deriveStreak(
@@ -72,11 +72,27 @@ test("same-day contributions neither increment nor reset the deadline", () => {
   );
   assert.equal(result.currentStreak, 1);
   assert.equal(result.contributions.length, 1);
-  assert.equal(result.lastContribution.at, first);
+  assert.equal(result.lastContribution.firstAt, first);
+  assert.equal(result.lastContribution.at, later);
   assert.equal(
     result.deadlineAt,
-    new Date(new Date(first).getTime() + WINDOW_MS).toISOString(),
+    new Date(new Date(later).getTime() + WINDOW_MS).toISOString(),
   );
+});
+
+test("a late same-day contribution preserves the chain into the next day", () => {
+  const result = deriveStreak(
+    [
+      contribution(1, "2026-07-18T00:00:00.000Z"),
+      contribution(2, "2026-07-18T16:00:00.000Z"),
+      contribution(3, "2026-07-19T15:00:00.000Z"),
+    ],
+    "2026-07-19T15:01:00.000Z",
+    timeZone,
+  );
+  assert.equal(result.currentStreak, 2);
+  assert.equal(result.contributions[0].firstAt, "2026-07-18T00:00:00.000Z");
+  assert.equal(result.contributions[0].at, "2026-07-18T16:00:00.000Z");
 });
 
 test("a new day inside the window increments and resets the deadline", () => {
@@ -160,12 +176,14 @@ test("IST midnight creates a new streak day inside the rolling window", () => {
   assert.equal(result.currentStreak, 2);
 });
 
-test("merging is idempotent and keeps the earliest event per day", () => {
+test("merging is idempotent and keeps both daily window boundaries", () => {
   const early = contribution(1, "2026-07-18T02:00:00.000Z");
   const late = contribution(2, "2026-07-18T12:00:00.000Z");
   const merged = mergeDailyContributions([late], [early, late], timeZone);
   assert.equal(merged.length, 1);
-  assert.equal(merged[0].id, "1");
+  assert.equal(merged[0].id, "2");
+  assert.equal(merged[0].firstAt, early.at);
+  assert.equal(merged[0].at, late.at);
 });
 
 test("default-branch and gh-pages pushes qualify with or without commit metadata", async () => {
