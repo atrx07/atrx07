@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="220" viewBox="0 0 400 220" role="img" aria-labelledby="title desc">
   <title id="title">Rolling contribution streak for atrx07</title>
-  <desc id="desc">ACTIVE rolling 24-hour streak: 1. Best streak: 3.</desc>
+  <desc id="desc">ACTIVE rolling 24-hour streak: 2. Best streak: 3.</desc>
   <style>
     .ui { font-family: "Segoe UI", Ubuntu, Arial, sans-serif; }
     .mono { font-family: "Cascadia Mono", "SFMono-Regular", Consolas, monospace; }
@@ -15,15 +15,15 @@
   <text class="mono" x="337" y="27" fill="#e8ff6b" font-size="11">ACTIVE</text>
 
   <path d="M30 72L49 72L40 91L53 91L29 126L35 99L22 99Z" fill="#e8ff6b"/>
-  <text class="ui" x="66" y="119" fill="#f0f6fc" font-size="64" font-weight="750">1</text>
+  <text class="ui" x="66" y="119" fill="#f0f6fc" font-size="64" font-weight="750">2</text>
   <text class="mono" x="69" y="143" fill="#8b949e" font-size="11">CURRENT CHAIN</text>
 
   <text class="mono" x="218" y="73" fill="#8b949e" font-size="10">PERSONAL BEST</text>
   <text class="ui" x="218" y="104" fill="#f0f6fc" font-size="27" font-weight="700">3 DAYS</text>
   <text class="mono" x="218" y="128" fill="#8b949e" font-size="10">WINDOW CLOSES</text>
-  <text class="mono" x="218" y="147" fill="#e8ff6b" font-size="12" font-weight="700">19 Jul // 22:04 IST</text>
+  <text class="mono" x="218" y="147" fill="#e8ff6b" font-size="12" font-weight="700">20 Jul // 10:00 IST</text>
 
-  <text class="mono" x="20" y="171" fill="#8b949e" font-size="10">CODE PUSHED // atrx07/NeuraLoc-Core</text>
-  <text class="mono" x="20" y="204" fill="#e8ff6b" font-size="10" font-weight="700">IGNITION // FIRST DAY LOCKED</text>
+  <text class="mono" x="20" y="171" fill="#8b949e" font-size="10">CODE PUSHED // atrx07/atrx07-portfolio</text>
+  <text class="mono" x="20" y="204" fill="#e8ff6b" font-size="10" font-weight="700">MOMENTUM // THE CHAIN IS ALIVE</text>
   <text class="mono" x="380" y="204" fill="#484f58" font-size="9" text-anchor="end">@atrx07</text>
 </svg>
