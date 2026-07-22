@@ -12,7 +12,7 @@
   <path d="M22 60H378" stroke="#30363d"/>
   
   <text class="text label" x="22" y="86">PUBLIC REPOS</text>
-  <text class="text value" x="22" y="111">14</text>
+  <text class="text value" x="22" y="111">15</text>
   <text class="text label" x="210" y="86">STARS EARNED</text>
   <text class="text value" x="210" y="111">9</text>
   <text class="text label" x="22" y="139">FOLLOWERS</text>
