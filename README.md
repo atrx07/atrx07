@@ -11,7 +11,7 @@
 
 ### `{ building useful things at the edge of practical and unusual }`
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Space+Mono&size=14&duration=3000&pause=1000&color=E8FF6B&center=true&vCenter=true&width=620&lines=Local+AI+%2F%2F+Real-time+Systems+%2F%2F+Automation;Rust+%7C+TypeScript+%7C+React+%7C+Python+%7C+Node.js;currently+shipping+NeuraLoc-Core)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Space+Mono&size=14&duration=3000&pause=1000&color=E8FF6B&center=true&vCenter=true&width=620&lines=Local+AI+%2F%2F+Real-time+Systems+%2F%2F+Automation;Rust+%7C+TypeScript+%7C+React+%7C+Python+%7C+Node.js;currently+building+Traelyx)](https://git.io/typing-svg)
 
 <p>
 Engineering student building local AI software, real-time applications, and bots with memory.<br/>
@@ -31,19 +31,19 @@ I like turning ambitious ideas into systems that can survive contact with real u
 <tr>
 <td>
 
-### [NeuraLoc-Core](https://github.com/atrx07/NeuraLoc-Core)
+### [N### [Traelyx](https://github.com/atrx07/Traelyx)
 
-**A privacy-first Windows desktop application for discovering, managing, and running local AI models.** NeuraLoc-Core combines a React and TypeScript interface with Tauri 2, Rust orchestration, SQLite metadata, and verified native inference engines.
+**An open-source, local-first Android platform for driving telemetry and driver intelligence.** Traelyx is being built to record and analyze trips, explain driver behavior, and deliver history and synchronized replay without requiring an account or mandatory cloud access. Its foundation combines Flutter and Dart with Riverpod, `go_router`, Drift, and a versioned Kotlin recorder bridge.
 
-![Rust](https://img.shields.io/badge/Rust-E8FF6B?style=flat-square&logo=rust&logoColor=000)
-![TypeScript](https://img.shields.io/badge/TypeScript-E8FF6B?style=flat-square&logo=typescript&logoColor=000)
-![React](https://img.shields.io/badge/React-E8FF6B?style=flat-square&logo=react&logoColor=000)
-![Tauri](https://img.shields.io/badge/Tauri-E8FF6B?style=flat-square&logo=tauri&logoColor=000)
-![SQLite](https://img.shields.io/badge/SQLite-E8FF6B?style=flat-square&logo=sqlite&logoColor=000)
+![Flutter](https://img.shields.io/badge/Flutter-E8FF6B?style=flat-square&logo=flutter&logoColor=000)
+![Dart](https://img.shields.io/badge/Dart-E8FF6B?style=flat-square&logo=dart&logoColor=000)
+![Kotlin](https://img.shields.io/badge/Kotlin-E8FF6B?style=flat-square&logo=kotlin&logoColor=000)
+![Android](https://img.shields.io/badge/Android-E8FF6B?style=flat-square&logo=android&logoColor=000)
+![SQLite](https://img.shields.io/badge/Drift_/_SQLite-E8FF6B?style=flat-square&logo=sqlite&logoColor=000)
 
-- **Current checkpoint:** Local GGUF indexing, a verified `llama.cpp` CPU runtime, model lifecycle controls, streaming chat, exact token-aware context, versioned prompts, durable history, branching, retry, and Markdown export.
-- **Coming next:** A model discovery and download catalog, hardware-aware multi-backend recommendations, layered prompt composition, stronger draft recovery, and release-ready Windows packaging.
-- **North star:** A dependable local-AI control center that keeps models and conversations on the user's machine while making hardware limits, model provenance, and runtime behavior easy to understand.
+- **Current milestone — M1 Application Foundation:** M0 and M1.1 are complete. M1.2 navigation is locally validated and awaiting remote CI; the app shell, semantic theme, local settings bootstrap, and navigation skeleton are in place, while trip recording remains intentionally unavailable.
+- **Coming next — M2 Native Recording Engine:** Finish the M1 persistence, migration, and diagnostics foundation, then add a recoverable Android foreground recorder with GNSS/IMU acquisition, crash-safe buffering, and physical-drive validation.
+- **Release target — M8 / v0.1.0:** Deliver a hardened, installable local-first driving companion with explainable telemetry, deterministic driver intelligence, trip history, and synchronized replay. [Follow the roadmap →](https://github.com/atrx07/Traelyx/blob/main/docs/exec-plans/ROADMAP.md)
 
 </td>
 </tr>
