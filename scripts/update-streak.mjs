@@ -15,6 +15,7 @@ const apiBase = "https://api.github.com";
 const statePath = "data/streak-state.json";
 const cardPath = "assets/streak.svg";
 const fallbackLookbackMs = 7 * WINDOW_MS;
+const profileRepository = `${username}/${username}`.toLowerCase();
 
 const headers = {
   Accept: "application/vnd.github+json",
@@ -52,6 +53,13 @@ async function github(path, maxAttempts = 3) {
   throw new Error("GitHub API request exhausted its retry budget.");
 }
 
+function cleanStoredContributions(contributions) {
+  if (!Array.isArray(contributions)) return [];
+  return contributions.filter(
+    (record) => record?.repo?.toLowerCase() !== profileRepository,
+  );
+}
+
 async function loadState() {
   try {
     const state = JSON.parse(await readFile(statePath, "utf8"));
@@ -62,7 +70,7 @@ async function loadState() {
       username,
       timeZone,
       bestStreak: Number(state.bestStreak) || 0,
-      contributions: Array.isArray(state.contributions) ? state.contributions : [],
+      contributions: cleanStoredContributions(state.contributions),
       processedEventIds:
         sourceVersion >= 2 && Array.isArray(state.processedEventIds)
         ? state.processedEventIds.map(String)
@@ -132,9 +140,7 @@ async function getRecentDefaultBranchContributions(state, now) {
   const candidates = repositories.filter((repository) => {
     if (!repository?.full_name || !repository?.default_branch) return false;
     if (repository.fork || repository.archived) return false;
-    if (repository.full_name.toLowerCase() === `${username}/${username}`.toLowerCase()) {
-      return false;
-    }
+    if (repository.full_name.toLowerCase() === profileRepository) return false;
     const pushedAt = new Date(repository.pushed_at).getTime();
     return Number.isFinite(pushedAt) && pushedAt >= sinceMs;
   });
