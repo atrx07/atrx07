@@ -1,7 +1,9 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import {
+  WINDOW_MS,
   deriveStreak,
   mergeDailyContributions,
+  qualifyCommit,
   qualifyEvent,
   renderStreakCard,
 } from "./streak-core.mjs";
@@ -12,6 +14,7 @@ const token = process.env.STREAK_TOKEN || process.env.GITHUB_TOKEN;
 const apiBase = "https://api.github.com";
 const statePath = "data/streak-state.json";
 const cardPath = "assets/streak.svg";
+const fallbackLookbackMs = 7 * WINDOW_MS;
 
 const headers = {
   Accept: "application/vnd.github+json",
@@ -93,7 +96,80 @@ async function getRecentEvents() {
   return events;
 }
 
+async function getPublicOwnedRepositories() {
+  const repositories = [];
+  for (let page = 1; page <= 3; page += 1) {
+    const batch = await github(
+      `/users/${encodeURIComponent(username)}/repos?type=owner&sort=pushed&direction=desc&per_page=100&page=${page}`,
+    );
+    repositories.push(...batch);
+    if (batch.length < 100) break;
+  }
+  return repositories;
+}
+
+function fallbackSince(state, now) {
+  const floor = now.getTime() - fallbackLookbackMs;
+  const latest = state.contributions.reduce((latestMs, record) => {
+    const at = new Date(record?.at).getTime();
+    return Number.isFinite(at) ? Math.max(latestMs, at) : latestMs;
+  }, Number.NEGATIVE_INFINITY);
+  const since = Number.isFinite(latest) ? Math.max(floor, latest - 60_000) : floor;
+  return new Date(since).toISOString();
+}
+
+async function getRecentDefaultBranchContributions(state, now) {
+  const since = fallbackSince(state, now);
+  let repositories;
+  try {
+    repositories = await getPublicOwnedRepositories();
+  } catch (error) {
+    console.warn(`Direct commit fallback could not list repositories: ${error.message}`);
+    return [];
+  }
+
+  const sinceMs = new Date(since).getTime();
+  const candidates = repositories.filter((repository) => {
+    if (!repository?.full_name || !repository?.default_branch) return false;
+    if (repository.fork || repository.archived) return false;
+    if (repository.full_name.toLowerCase() === `${username}/${username}`.toLowerCase()) {
+      return false;
+    }
+    const pushedAt = new Date(repository.pushed_at).getTime();
+    return Number.isFinite(pushedAt) && pushedAt >= sinceMs;
+  });
+
+  const contributions = [];
+  for (const repository of candidates) {
+    try {
+      for (let page = 1; page <= 3; page += 1) {
+        const commits = await github(
+          `/repos/${repository.full_name}/commits?sha=${encodeURIComponent(repository.default_branch)}&author=${encodeURIComponent(username)}&since=${encodeURIComponent(since)}&per_page=100&page=${page}`,
+        );
+        for (const commit of commits) {
+          const contribution = qualifyCommit(commit, {
+            username,
+            timeZone,
+            repository,
+          });
+          if (contribution) {
+            contributions.push(contribution);
+          }
+        }
+        if (commits.length < 100) break;
+      }
+    } catch (error) {
+      console.warn(
+        `Direct commit fallback could not inspect ${repository.full_name}: ${error.message}`,
+      );
+    }
+  }
+
+  return contributions;
+}
+
 async function main() {
+  const now = process.env.STREAK_NOW ? new Date(process.env.STREAK_NOW) : new Date();
   const [state, events] = await Promise.all([loadState(), getRecentEvents()]);
   if (state.sourceVersion < 2) {
     console.log("Migrating streak state to rolling inactivity windows.");
@@ -116,7 +192,7 @@ async function main() {
   const newEvents = events
     .filter((event) => !processed.has(String(event.id)))
     .sort((a, b) => new Date(a.created_at) - new Date(b.created_at));
-  const newContributions = [];
+  const eventContributions = [];
 
   for (const event of newEvents) {
     const contribution = await qualifyEvent(event, {
@@ -125,16 +201,17 @@ async function main() {
       getRepository,
     });
     if (contribution) {
-      newContributions.push(contribution);
+      eventContributions.push(contribution);
     }
   }
 
+  const commitContributions = await getRecentDefaultBranchContributions(state, now);
+  const newContributions = [...eventContributions, ...commitContributions];
   const contributions = mergeDailyContributions(
     state.contributions,
     newContributions,
     timeZone,
   );
-  const now = process.env.STREAK_NOW ? new Date(process.env.STREAK_NOW) : new Date();
   const streak = deriveStreak(contributions, now, timeZone, state.bestStreak);
   const processedEventIds = [
     ...new Set([...events.map((event) => String(event.id)), ...state.processedEventIds]),
@@ -160,7 +237,8 @@ async function main() {
   console.log(
     [
       `Processed ${newEvents.length} new events.`,
-      `Found ${newContributions.length} qualifying contributions.`,
+      `Found ${eventContributions.length} event contributions.`,
+      `Found ${commitContributions.length} direct commit fallback contributions.`,
       `Current streak: ${streak.currentStreak}.`,
       `Best streak: ${streak.bestStreak}.`,
       `Status: ${streak.active ? "active" : "standby"}.`,
