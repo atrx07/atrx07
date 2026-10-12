@@ -5,6 +5,7 @@ import {
   deriveStreak,
   localDayKey,
   mergeDailyContributions,
+  qualifyCommit,
   qualifyEvent,
   renderStreakCard,
 } from "./streak-core.mjs";
@@ -204,6 +205,94 @@ test("default-branch and gh-pages pushes qualify with or without commit metadata
       .label,
     "CODE PUSHED",
   );
+});
+
+test("direct default-branch commit fallback qualifies user commits", () => {
+  const repository = {
+    full_name: "atrx07/Traelyx",
+    default_branch: "main",
+    fork: false,
+    archived: false,
+  };
+  const commit = {
+    sha: "abc123",
+    author: { login: username },
+    commit: { committer: { date: "2026-10-12T14:11:31.000Z" } },
+  };
+  const result = qualifyCommit(commit, { username, timeZone, repository });
+  assert.equal(result.label, "CODE PUSHED");
+  assert.equal(result.repo, "atrx07/Traelyx");
+  assert.equal(result.day, "2026-10-12");
+  assert.equal(result.source, "default-branch-commit-fallback");
+});
+
+test("direct commit fallback cannot self-feed or count foreign automation", () => {
+  const commit = {
+    sha: "abc123",
+    author: { login: username },
+    commit: { committer: { date: "2026-10-12T14:11:31.000Z" } },
+  };
+  assert.equal(
+    qualifyCommit(commit, {
+      username,
+      timeZone,
+      repository: {
+        full_name: "atrx07/atrx07",
+        default_branch: "main",
+        fork: false,
+        archived: false,
+      },
+    }),
+    null,
+  );
+  assert.equal(
+    qualifyCommit(
+      { ...commit, author: { login: "github-actions[bot]" } },
+      {
+        username,
+        timeZone,
+        repository: {
+          full_name: "atrx07/Traelyx",
+          default_branch: "main",
+          fork: false,
+          archived: false,
+        },
+      },
+    ),
+    null,
+  );
+});
+
+test("fallback activity extends an existing rolling chain", () => {
+  const previous = contribution(1, "2026-10-11T17:45:39.000Z", {
+    repo: "atrx07/Traelyx",
+  });
+  const fallback = qualifyCommit(
+    {
+      sha: "abc123",
+      author: { login: username },
+      commit: { committer: { date: "2026-10-12T14:11:31.000Z" } },
+    },
+    {
+      username,
+      timeZone,
+      repository: {
+        full_name: "atrx07/Traelyx",
+        default_branch: "main",
+        fork: false,
+        archived: false,
+      },
+    },
+  );
+  const result = deriveStreak(
+    [previous, fallback],
+    "2026-10-12T14:12:00.000Z",
+    timeZone,
+    12,
+  );
+  assert.equal(result.currentStreak, 2);
+  assert.equal(result.bestStreak, 12);
+  assert.equal(result.lastContribution.at, "2026-10-12T14:11:31.000Z");
 });
 
 test("feature-branch, fork, and archived pushes do not qualify", async () => {
