@@ -173,11 +173,16 @@ export async function qualifyEvent(
     getRepository = async () => ({ fork: false, default_branch: "main" }),
   } = {},
 ) {
+  const normalizedUser = username.toLowerCase();
   if (
     !event?.id ||
     !event?.created_at ||
-    event.actor?.login?.toLowerCase() !== username.toLowerCase()
+    event.actor?.login?.toLowerCase() !== normalizedUser
   ) {
+    return null;
+  }
+
+  if (event.repo?.name?.toLowerCase() === `${normalizedUser}/${normalizedUser}`) {
     return null;
   }
 
