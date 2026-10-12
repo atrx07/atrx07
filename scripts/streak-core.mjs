@@ -120,6 +120,51 @@ export function deriveStreak(
   };
 }
 
+export function qualifyCommit(
+  commit,
+  {
+    username = "atrx07",
+    timeZone = "Asia/Kolkata",
+    repository = null,
+  } = {},
+) {
+  if (!commit?.sha || !repository?.full_name || !repository?.default_branch) {
+    return null;
+  }
+
+  const normalizedUser = username.toLowerCase();
+  const normalizedRepo = repository.full_name.toLowerCase();
+  const profileRepo = `${normalizedUser}/${normalizedUser}`;
+  if (repository.fork || repository.archived || normalizedRepo === profileRepo) {
+    return null;
+  }
+
+  const commitLogin = commit.author?.login || commit.committer?.login;
+  if (commitLogin?.toLowerCase() !== normalizedUser) {
+    return null;
+  }
+
+  const at = commit.commit?.committer?.date || commit.commit?.author?.date;
+  if (!at) {
+    return null;
+  }
+
+  const timestamp = new Date(at);
+  if (Number.isNaN(timestamp.getTime())) {
+    return null;
+  }
+
+  return {
+    id: `commit:${repository.full_name}:${commit.sha}`,
+    at: timestamp.toISOString(),
+    day: localDayKey(timestamp, timeZone),
+    eventType: "PushEvent",
+    repo: repository.full_name,
+    label: "CODE PUSHED",
+    source: "default-branch-commit-fallback",
+  };
+}
+
 export async function qualifyEvent(
   event,
   {
