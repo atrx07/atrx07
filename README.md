@@ -11,7 +11,7 @@
 
 ### `{ building useful things at the edge of practical and unusual }`
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Space+Mono&size=14&duration=3000&pause=1000&color=E8FF6B&center=true&vCenter=true&width=620&lines=Local+AI+%2F%2F+Real-time+Systems+%2F%2F+Automation;Rust+%7C+TypeScript+%7C+React+%7C+Python+%7C+Node.js;currently+building+Traelyx)](https://git.io/typing-svg)
+<img src="https://terminal-typing-svg.vaidikv.workers.dev/?lines=%24%20whoami;atrx07%20--%20engineering%20student%2C%20systems%20builder;%24%20cat%20focus.txt;local%20AI%20%2F%2F%20real-time%20systems%20%2F%2F%20automation;%24%20./currently_building.sh;Traelyx%20--%20local-first%20driving%20telemetry&theme=github-dark&accent=E8FF6B&prompt=atrx07@github&title=zsh&width=620" alt="terminal typing animation" />
 
 <p>
 Engineering student building local AI software, real-time applications, and bots with memory.<br/>
@@ -164,19 +164,9 @@ A high-converting landing page for local service businesses — plumbers, electr
 
 <div align="center">
 
-![Rust](https://img.shields.io/badge/Rust-E8FF6B?style=for-the-badge&logo=rust&logoColor=000)
-![TypeScript](https://img.shields.io/badge/TypeScript-E8FF6B?style=for-the-badge&logo=typescript&logoColor=000)
-![JavaScript](https://img.shields.io/badge/JavaScript-E8FF6B?style=for-the-badge&logo=javascript&logoColor=000)
-![React](https://img.shields.io/badge/React-E8FF6B?style=for-the-badge&logo=react&logoColor=000)
-![Node.js](https://img.shields.io/badge/Node.js-E8FF6B?style=for-the-badge&logo=node.js&logoColor=000)
-![Python](https://img.shields.io/badge/Python-E8FF6B?style=for-the-badge&logo=python&logoColor=000)
+<img src="https://skillicons.dev/icons?i=rust,ts,js,react,nodejs,py,tauri,cloudflare,sqlite,redis,railway&theme=dark&perline=11" alt="tech stack" />
 
-![Tauri](https://img.shields.io/badge/Tauri-1a1a1a?style=for-the-badge&logo=tauri&logoColor=E8FF6B)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-1a1a1a?style=for-the-badge&logo=cloudflare&logoColor=E8FF6B)
-![SQLite](https://img.shields.io/badge/SQLite-1a1a1a?style=for-the-badge&logo=sqlite&logoColor=E8FF6B)
-![Redis](https://img.shields.io/badge/Upstash_Redis-1a1a1a?style=for-the-badge&logo=redis&logoColor=E8FF6B)
 ![Groq](https://img.shields.io/badge/Groq_AI-1a1a1a?style=for-the-badge&logo=groq&logoColor=E8FF6B)
-![Railway](https://img.shields.io/badge/Railway-1a1a1a?style=for-the-badge&logo=railway&logoColor=E8FF6B)
 
 </div>
 
@@ -203,11 +193,15 @@ working_style: Build it, test it on the real target, then keep refining.
 
 <div align="center">
 
-<img src="./assets/github-stats.svg" width="400" alt="atrx07 GitHub statistics"/>
-<img src="./assets/top-languages.svg" width="400" alt="atrx07 most-used languages"/>
+<img src="https://terminal-typing-svg.vaidikv.workers.dev/stats?username=atrx07&style=terminal&theme=github-dark&accent=E8FF6B&prompt=atrx07@github&title=zsh" alt="atrx07 GitHub statistics" />
 
 <br/>
-<img src="./assets/streak.svg" width="400" alt="atrx07 rolling 24-hour contribution streak"/>
+
+<img src="https://streak-stats.demolab.com/?user=atrx07&theme=dark&background=0d1117&border=e8ff6b&ring=e8ff6b&fire=e8ff6b&currStreakLabel=e8ff6b&sideLabels=e8ff6b&currStreakNum=ffffff&sideNums=ffffff&dates=888888" alt="atrx07 contribution streak" />
+
+<br/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=atrx07&layout=compact&theme=dark&title_color=E8FF6B&text_color=ffffff&bg_color=0d1117&hide_border=true" alt="atrx07 most-used languages" />
 
 </div>
 
