@@ -124,6 +124,42 @@ The rest of my repositories cover load testing, Instagram tooling, Telegram auto
 
 ---
 
+## `PRODUCTS`
+
+<table>
+<tr>
+<td valign="top">
+
+### [Flowline — SaaS Landing Page Template](https://shadowatrx.gumroad.com/l/weqtbt)
+
+A polished, single-file landing page for SaaS products and startups. Ten complete sections, fully responsive, re-theme the whole page with 2 CSS variables. No frameworks, no build step.
+
+**₹499** · `Single-file HTML` // `Customization guide` // `Commercial license`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+### [ClearFlow — Local Business Landing Page Template](https://shadowatrx.gumroad.com/l/qoxvun)
+
+A high-converting landing page for local service businesses — plumbers, electricians, salons, clinics, restaurants. Mobile-first, quote form included, every word swaps out in minutes.
+
+**₹499** · `Single-file HTML` // `Customization guide` // `Commercial license`
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+[![View all products](https://img.shields.io/badge/View_all_products-E8FF6B?style=for-the-badge&logo=gumroad&logoColor=000)](https://github.com/atrx07/atrx07/blob/main/PRODUCTS.md)
+
+</div>
+
+---
+
+
 ## `TOOLBOX`
 
 <div align="center">
