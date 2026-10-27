@@ -41,8 +41,7 @@ I like turning ambitious ideas into systems that can survive contact with real u
 ![Android](https://img.shields.io/badge/Android-E8FF6B?style=flat-square&logo=android&logoColor=000)
 ![SQLite](https://img.shields.io/badge/Drift_/_SQLite-E8FF6B?style=flat-square&logo=sqlite&logoColor=000)
 
-- **Current milestone — M1 Application Foundation:** M0 and M1.1 are complete. M1.2 navigation is locally validated and awaiting remote CI; the app shell, semantic theme, local settings bootstrap, and navigation skeleton are in place, while trip recording remains intentionally unavailable.
-- **Coming next — M2 Native Recording Engine:** Finish the M1 persistence, migration, and diagnostics foundation, then add a recoverable Android foreground recorder with GNSS/IMU acquisition, crash-safe buffering, and physical-drive validation.
+- **Current capabilities:** Native Android trip recording, verified offline trip history and synchronized route replay, explainable driver intelligence, and optional consent-based cloud features. For up-to-date milestones and validation evidence, see the [live Traelyx roadmap](https://github.com/atrx07/Traelyx/blob/main/docs/exec-plans/ROADMAP.md).
 - **Release target — M8 / v0.1.0:** Deliver a hardened, installable local-first driving companion with explainable telemetry, deterministic driver intelligence, trip history, and synchronized replay. [Follow the roadmap →](https://github.com/atrx07/Traelyx/blob/main/docs/exec-plans/ROADMAP.md)
 
 </td>
